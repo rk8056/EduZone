@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                zone:'#6500d8',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body onload="storeData()">
+    <header class="bg-zone py-3">
+        <div class="container flex gap-2 "> 
+                <a href="../../home.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-white text-lg pl-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+                </svg></a>
+                <h1 class="text-white font-semibold">CIRCULAR</h1>
+        </div>
+    </header>
+    <div class="container px-5 py-5">
+        <div class="card-1">
+            <h1 id="sub" class="font-serif" >Photocopy & Revaluation Last Date & Procedure | KSRIET Exam Cell</h1>
+            <h6 id="date" class="font-normal">7 Oct, 1:08 pm </h6>
+            <hr class="h-px my-3 bg-gray-200  dark:bg-gray-700">
+        </div>
+        <div class="card-1">
+            <h1 id="displaySubject" class="font-serif" ></h1>
+            <h6 id="displayDate" class="font-normal"></h6>
+            <hr class="h-px my-3 bg-gray-200  dark:bg-gray-700">
+        </div>
+    </div>
+    
+
+    <script src="./circular/circular.js"></script>
+</body>
+</html>
