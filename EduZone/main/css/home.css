@@ -168,7 +168,15 @@ a,
   background-color:transparent;
   border-radius: 0 0 20px 20px;
 }
-
+.header .logo-small .logo-dark{
+  display: none;
+}
+.header.active .logo-small .logo-light{
+  display: none;
+}
+.header.active .logo-small .logo-dark{
+  display:inline-block;
+}
 .btn {
   font-size: 20px;
   text-transform: uppercase;
@@ -191,16 +199,9 @@ a,
   width: 100px;
   height:auto;
   left: 50%;
+  vertical-align: middle;
   transform: translateX(-20%);
   
-}
-
-.logo-small .logo-dark{
-  display:none;
-
-}
-
-.logo-small .logo-light{
 }
 
 .menu-icon p
