@@ -1,0 +1,14 @@
+.card{
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #6500d8;
+}
+.card-body form .form-group{
+    margin-bottom: 15px;
+}
+ .form-group .btn{
+    color: #ffffff;
+    background-color: #6500d8;
+    border: none;
+    font-size: 20px;
+ }
