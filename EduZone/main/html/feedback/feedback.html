@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="./feedback.css">
+    <script src="./feedback.js"></script>
 
 </head>
 <body>
@@ -21,10 +22,10 @@
     </header>
     <div class="card">
         <div class="card-body">
-            <form action="">
+            <form action="" >
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name"  placeholder="Enter Your Name" class="form-control" required>
+                    <input type="text" id="name" name="name"  placeholder="Enter Your Name" class="form-control" >
                 </div>
                 <div class="form-group">
                     <label for="rg-no">Register Number</label>
@@ -46,5 +47,33 @@
         </div>
 
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('form');
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regular expression for email validation
+    
+            form.addEventListener('submit', function (event) {
+                const name = nameInput.value;
+                const email = emailInput.value;
+    
+                if (name.trim() === '') {
+                    event.preventDefault(); 
+                    alert('Please enter a valid name.');
+                    nameInput.focus();
+                    return;
+                }
+    
+                if (!emailRegex.test(email)) {
+                    event.preventDefault(); 
+                    alert('Please enter a valid email address.');
+                    emailInput.focus();
+                    return;
+                }
+            });
+        });
+    </script>
+    
 </body>
 </html>
