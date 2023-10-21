@@ -1,13 +1,10 @@
 @media (max-width: 768px) {
-    table {
-      width: 1000%;
-    }
-  
    table, th, td {
-        font-size: 9px;
+        font-size: 5px;
       white-space: nowrap;
       overflow: hidden;
     }
+
 }
 
 table{  
@@ -23,11 +20,16 @@ th,td{
 th{
     background-color: #6500d8 !important;
 }
+
+h2{
+    font-size: 15px;
+}
 .card{
-    margin: 10px 10px 0 10px;
+    margin: 10px;
     border-radius: 10px;
     border: 2px solid #6500d8;
 }
+
 
 
     
