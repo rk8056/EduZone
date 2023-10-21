@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+    table {
+      width: 1000%;
+    }
+  
+   table, th, td {
+        font-size: 9px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+}
+
+table{  
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+th,td{
+    border:2px solid #f5f5f5 !important ;
+}
+
+tr,th{
+    background-color: #6500d8 !important;
+}
+.card{
+    margin: 10px 10px 0 10px;
+    border-radius: 10px;
+    border: 2px solid #6500d8;
+}
+
+
+    
